@@ -1,16 +1,14 @@
 const menuItems = [
-    { name: 'Pancakes', image: 'IMAGES/pancakes.webp', description: 'Fluffy Buttermilk Pancakes', category: 'breakfast' },
-    { name: 'Breakfast Tacos', image: 'IMAGES/breakfast tacos.jpg', description: 'Savory Breakfast Tacos', category: 'breakfast' },
-    { name: 'Oatmeal', image: 'IMAGES/oatmeal.jpg', description: 'Sweet Oats', category: 'breakfast' },
-    { name: 'Sandwich', image: 'IMAGES/sandwich.jpg', description: 'Grilled Chicken Sandwich', category: 'lunch' },
-    { name: 'Garden Salad', image: 'IMAGES/salad.jpg', description: 'Fresh Garden Salad', category: 'lunch' },
-    { name: 'Pizza', image: 'IMAGES/pizza.jpg', description: 'Pepperoni Pizza', category: 'dinner' },
-    { name: 'Pasta', image: 'IMAGES/pasta.jpg', description: 'Tomato Cream Pasta', category: 'dinner' },
-    { name: 'Fried Rice', image: 'IMAGES/fried_rice.jpg', description: 'Tasty Fried Rice', category: 'dinner' },
-    { name: 'Steak', image: 'IMAGES/steak.jpg', description: 'Tender Steak and Fresh Broccoli', category: 'dinner' }
-]
-
-
+    { name: 'Pancakes', image: '/IMAGES/pancakes.webp', description: 'Fluffy Buttermilk Pancakes', category: 'breakfast' },
+    { name: 'Breakfast Tacos', image: '/IMAGES/breakfast tacos.jpg', description: 'Savory Breakfast Tacos', category: 'breakfast' },
+    { name: 'Oatmeal', image: '/IMAGES/oatmeal.jpg', description: 'Sweet Oats', category: 'breakfast' },
+    { name: 'Sandwich', image: '/IMAGES/sandwich.jpg', description: 'Grilled Chicken Sandwich', category: 'lunch' },
+    { name: 'Garden Salad', image: '/IMAGES/salad.jpg', description: 'Fresh Garden Salad', category: 'lunch' },
+    { name: 'Pizza', image: '/IMAGES/pizza.jpg', description: 'Pepperoni Pizza', category: 'dinner' },
+    { name: 'Pasta', image: '/IMAGES/pasta.jpg', description: 'Tomato Cream Pasta', category: 'dinner' },
+    { name: 'Fried Rice', image: '/IMAGES/fried_rice.jpg', description: 'Tasty Fried Rice', category: 'dinner' },
+    { name: 'Steak', image: '/IMAGES/steak.jpg', description: 'Tender Steak and Fresh Broccoli', category: 'dinner' }
+];
 
 
 function renderMenuItems(category, containerId) {
