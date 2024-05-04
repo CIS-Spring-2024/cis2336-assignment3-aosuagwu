@@ -36,43 +36,43 @@
     </section>
 
     <button onclick="submitOrder()">Submit Order</button>
-
+    
     <form id="orderForm">
-        <button type="submit">Submit Order</button>
     </form>
 
 </main>
     
-    <script src="/JS/menu.js"></script>
+<script src="/JS/menu.js"></script>
 
-    <script>
-        document.getElementById('orderForm').addEventListener('submit', function(event) {
-            event.preventDefault();
+<script>
+    document.querySelector('button[type="submit"]').addEventListener('click', function(event) {
+        event.preventDefault();
 
-            const formData = new FormData(this);
-    
-            fetch('/submitOrder', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => {
-                if (response.ok) {
-                    return response.json();
-                } else {
-                    throw new Error('Failed to submit order'); 
-                }
-            })
-            .then(data => {
-                console.log(data); 
-                alert('Order has been successfully submitted!'); 
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('Failed to submit order. Please try again later.');
-            });
+        const formData = new FormData(document.getElementById('orderForm'));
+
+        fetch('/submitOrder', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error('Failed to submit order');
+            }
+        })
+        .then(data => {
+            console.log(data);
+            alert('Order has been successfully submitted!');
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Failed to submit order. Please try again later.');
         });
-    </script>
+    });
+</script>
 
 </body>
 </html>
+
 
